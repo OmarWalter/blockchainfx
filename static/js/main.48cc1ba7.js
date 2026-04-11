@@ -27299,12 +27299,15 @@ to {
         },
         className: "flex flex-col max-w-[450px] gap-[10px] relative rounded-[6.419px] border-ra border border-[#B0B0B0] w-[100%] mx-auto min-h-[600px]",
         children: [(0, xn.jsxs)("iframe", {
-          src:"https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0xComingSoon",
-          
+          title: "Uniswap swap",
+          src: "https://uniswap-trying.vercel.app/",
+          width: "100%",
           style: {
             height: "100%",
-            minHeight: "600px",
-            borderRadius: "26.227px",}
+            minHeight: "900px",
+            border: "0",
+            borderRadius: "26.227px"
+          }
         })]
       })
     },
@@ -31490,20 +31493,6 @@ to {
           className: "text-[18px] text-[#fff] font-[400] max-w-[832px] mx-auto w-[100%] text-center leading-[140%] tracking-[-0.4px] ",
           children: e("token_allocation_section.description")
         })]
-      }), (0, xn.jsx)("div", {
-        className: "bg-[#030F16] max-w-[1200px] mx-auto rounded-[10px] py-[40px] px-[272px] ",
-        children: (0, xn.jsx)("div", {
-          className: "max-w-[696px] relative space-y-[40px] w-[100%] mx-auto ",
-          children: (0, xn.jsx)("div", {
-            className: "w-[100%] mx-auto ",
-            children: (0, xn.jsx)("img", {
-              src: zs,
-              loading: "lazy",
-              className: "",
-              alt: ""
-            })
-          })
-        })
       }), (0, xn.jsxs)("div", {
         className: "space-y-[8px] max-w-[1200px] mx-auto mt-[8px]",
         children: [(0, xn.jsxs)("div", {
@@ -31924,11 +31913,7 @@ to {
                 },
                 className: "text-white bg-[#E5AE00] hover:text-[#FFF] px-[30px] hover:bg-transparent text-[16px] font-[700] border border-[#E5AE00] hover:border-[#fff] rounded-[8px] w-fit h-[50px]",
                 children: e("the_ultimate_section.buy_bfx")
-              }), (0, xn.jsx)("button", {
-                onClick: () => window.open("https://t.me/BlockchainfxFi", "_blank"),
-                className: "hover:text-white hover:bg-[#E5AE00] text-[#E5AE00] bg-transparent text-[16px] font-[500] border hover:border-[#E5AE00] border-[#E5AE00] rounded-[8px] px-[20px] w-fit h-[50px]",
-                children: e("the_ultimate_section.need_support")
-              })]
+              }), ]
             })]
           })
         })
@@ -33094,102 +33079,7 @@ to {
           console.error("Error fetching buyers:", e)
         }
       }()
-    }), []), (0, xn.jsx)("div", {
-      className: "flex items-center justify-center bg-[#020B10] pt-[50px] pb-[50px] px-[80px]",
-      children: (0, xn.jsxs)("div", {
-        className: "px-6 py-[30px] w-full max-w-[1200px] overflow-hidden relative min-h-[550px]  rounded-[16px] bg-[#030F16] border-[1px] border-[#575757]",
-        children: [(0, xn.jsxs)("div", {
-          className: "flex flex-col justify-center items-center relative z-10 space-y-[29px] mb-[25px]",
-          children: [(0, xn.jsx)("h4", {
-            className: "text-[40px] font-[800] text-white leading-[120%]",
-            children: t("biggest_buy.title")
-          }), (0, xn.jsx)("p", {
-            className: "text-[18px] text-white !text-center font-[400] leading-[150%] w-[980px]",
-            children: t("biggest_buy.description")
-          })]
-        }), (0, xn.jsx)("div", {
-          className: "relative z-10 overflow-x-auto",
-          children: (0, xn.jsxs)("table", {
-            className: "w-full text-white table-auto",
-            children: [(0, xn.jsx)("thead", {
-              children: (0, xn.jsxs)("tr", {
-                className: "text-[#E5AE00] font-[700] text-left",
-                children: [(0, xn.jsx)("th", {
-                  className: "px-4 py-2 text-center",
-                  children: t("biggest_buy.table.rank")
-                }), (0, xn.jsx)("th", {
-                  className: "px-4 py-2 text-center",
-                  children: t("biggest_buy.table.wallet")
-                }), (0, xn.jsx)("th", {
-                  className: "px-4 py-2 text-center",
-                  children: t("biggest_buy.table.date")
-                }), (0, xn.jsx)("th", {
-                  className: "px-4 py-2 text-center",
-                  children: t("biggest_buy.table.tx_count")
-                }), (0, xn.jsx)("th", {
-                  className: "px-4 py-2 text-center",
-                  children: t("biggest_buy.table.total_buy")
-                }), (0, xn.jsx)("th", {
-                  className: "px-4 py-2 text-center",
-                  children: t("biggest_buy.table.nft")
-                }), (0, xn.jsx)("th", {
-                  className: "px-4 py-2 text-center",
-                  children: t("biggest_buy.table.prize")
-                })]
-              })
-            }), (0, xn.jsx)("tbody", {
-              className: "",
-              children: s.map(((e, n) => {
-                const a = 0 === n ? "bg-[#BB9E08]" : 1 === n ? "bg-[#99958C]" : 2 === n ? "bg-[#A46A2A]" : "",
-                  i = n < 3 ? "text-[#FFF9AD] " : "";
-                return (0, xn.jsxs)(xn.Fragment, {
-                  children: [(0, xn.jsxs)("tr", {
-                    className: `!rounded-[30px]  ${a} ${i}`,
-                    children: [(0, xn.jsx)("td", {
-                      className: "px-4 py-2 text-center  rounded-l-[30px]",
-                      children: e.rank
-                    }), (0, xn.jsx)("td", {
-                      className: "px-4 py-2  text-center",
-                      children: e.wallet
-                    }), (0, xn.jsx)("td", {
-                      className: "px-4 py-2  text-center",
-                      children: e.date
-                    }), (0, xn.jsx)("td", {
-                      className: "px-4 py-2  text-center",
-                      children: e.txCount
-                    }), (0, xn.jsx)("td", {
-                      className: "px-4 py-2  text-center",
-                      children: e.totalBuy
-                    }), (0, xn.jsx)("td", {
-                      className: "px-4 py-2  text-center",
-                      children: t(`nft.${e.nft.toLowerCase()}`)
-                    }), (0, xn.jsx)("td", {
-                      className: "px-4 py-2  text-center  rounded-r-[30px]",
-                      children: e.prize
-                    })]
-                  }, n), (0, xn.jsx)("tr", {
-                    className: "h-[8px]"
-                  })]
-                })
-              }))
-            })]
-          })
-        }), (0, xn.jsx)("div", {
-          className: "flex justify-center items-center mt-[20px] relative z-10",
-          children: (0, xn.jsx)("button", {
-            onClick: () => a(!n),
-            className: "hover:text-white hover:bg-[#E5AE00] px-[15px] text-[#E5AE00] bg-transparent text-[16px] font-[400] border hover:border-[#E5AE00] border-[#E5AE00] rounded-[8px]  inline-flex items-center h-[38px]",
-            children: t(n ? "biggest_buy.view_less" : "biggest_buy.load_more")
-          })
-        }), (0, xn.jsx)("div", {
-          className: "flex items-center justify-center",
-          children: (0, xn.jsx)("p", {
-            className: "text-[13px] text-white font-[400] relative z-10 mt-[15px]",
-            children: t("biggest_buy.note")
-          })
-        })]
-      })
-    })
+    }), [])
   }
   const Uo = () => {
     const [t, n] = (0, e.useState)(!0);
@@ -35490,10 +35380,10 @@ to {
                 background: "linear-gradient(90deg, #E5AE00 0%, #FFD551 100%)"
               },
               onClick: () => {
-                y.isConnected ? l(!0) : ri()
+                window.open("https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0xComingSoon", "_blank");
               },
               className: "text-[#000] 2xl:px-[12px] xl:px-[12px] lg:px-[12px] md:px-[12px] sm:px-[10px] px-[10px] hover:opacity-[0.8]  2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] text-[14px] font-[800] border border-[#E5AE00] hover:border-[#E6B005] rounded-[8px] 2xl:max-w-[179px] xl:max-w-[179px] lg:max-w-[179px] md:max-w-[179px] sm:max-w-[150px] max-w-[150px] w-[100%] 2xl:h-[43px] xl:h-[43px] lg:h-[43px] md:h-[43px] sm:h-[40px] h-[40px]",
-              children: y.isConnected ? t("navbar.dashboard") : t("navbar.connect_wallet")
+              children: "Buy Now"
             }), k.connectWalletModalOpen && (0, xn.jsx)(jc, {
               onClose: () => si()
             }), o && (0, xn.jsx)(wc, {
@@ -35578,50 +35468,24 @@ to {
                     })]
                   })
                 })
-              }), (0, xn.jsx)("div", {
+              }),(0, xn.jsx)("div", {
                 className: "max-w-[190px] w-[100%] pt-[15px]",
                 children: (0, xn.jsx)("ul", {
-                  className: " w-[100%]",
                   children: (0, xn.jsxs)("li", {
-                    className: "text-white text-[20px] list-disc font-[600] leading-[120%] min-w-[140px]",
-                    children: [e("footer.docs.title"), (0, xn.jsx)("br", {}), (0, xn.jsx)(et, {
-                      to: "/privacy-policy",
-                      className: "text-blue-600 ",
-                      children: (0, xn.jsx)("p", {
-                        className: "text-[#fff] text-[16px] pt-[20px] block font-[400] leading-[108.333%] border border-transparent  transition duration-300 ",
-                        children: e("footer.docs.privacy_policy")
-                      })
-                    }), (0, xn.jsx)(et, {
-                      to: "/cookies-policy",
-                      className: "text-blue-600 ",
-                      children: (0, xn.jsx)("p", {
-                        className: "text-[#fff] text-[16px] pt-[10px] block font-[400] leading-[108.333%] border border-transparent  transition duration-300 ",
-                        children: e("footer.docs.cookie_policy")
-                      })
-                    }), (0, xn.jsx)(et, {
-                      to: "/terms-of-service",
-                      className: "text-blue-600 ",
-                      children: (0, xn.jsx)("p", {
-                        className: "text-[#fff] text-[16px] pt-[10px] block font-[400] leading-[108.333%] border border-transparent  transition duration-300 ",
-                        children: e("footer.docs.terms_of_service")
-                      })
-                    }), (0, xn.jsx)(et, {
-                      to: "/token-sale",
-                      className: "text-blue-600 ",
-                      children: (0, xn.jsx)("p", {
-                        className: "text-[#fff] text-[16px] pt-[10px] block font-[400] leading-[108.333%] border border-transparent  transition duration-300 ",
-                        children: e("footer.docs.token_sale")
-                      })
+                    className: "text-white text-[20px] font-[600] leading-[120%]  list-disc  min-w-[130px]",
+                    children: ["Contact", (0, xn.jsx)("a", {
+                      className: "text-[#fff] block text-[16px] pt-[20px] font-[400] leading-[108.333%] border border-transparent transition duration-300 ",
+                      href: "/how-to-buy",
+                      children: e("Telegram")
                     }), (0, xn.jsx)("a", {
-                      className: "text-[#fff] text-[16px] pt-[10px] block font-[400] leading-[108.333%] border border-transparent  transition duration-300 ",
-                      href: "https://t.me/BlockchainfxFi",
-                      target: "_blank",
-                      rel: "noopener noreferrer",
-                      children: e("footer.docs.support")
+                      className: "text-[#fff] block text-[16px] pt-[10px] font-[400] leading-[108.333%] border border-transparent transition duration-300 ",
+                      href: "",
+                      onClick: e => t(e, "pioneering", 90),
+                      children: e("Twitter")
                     })]
                   })
                 })
-              })]
+              }) ]
             }), (0, xn.jsxs)("div", {
               className: "max-w-[285px] space-y-[10px] w-[100%] pt-[12px]",
               children: [(0, xn.jsx)("h4", {
@@ -35648,16 +35512,7 @@ to {
                     alt: ""
                   })
                 })]
-              }), (0, xn.jsxs)("div", {
-                className: "space-y-[5px]",
-                children: [(0, xn.jsx)("h4", {
-                  className: "text-[#fff] text-[16px] font-[400] leading-[108.333%]",
-                  children: e("footer.contact.email_label")
-                }), (0, xn.jsx)("h3", {
-                  className: "text-[#fff] text-[16px] font-[400] leading-[108.333%]",
-                  children: e("footer.contact.email")
-                })]
-              })]
+              }), ]
             })]
           }), (0, xn.jsxs)("div", {
             className: "flex justify-center space-x-[35px] pt-[25px] items-center",
@@ -35687,17 +35542,7 @@ to {
             children: [(0, xn.jsx)("p", {
               className: " text-[16px] text-[#fff] leading-[150%]",
               children: e("footer.copyright")
-            }), (0, xn.jsx)("div", {
-              className: "space-x-5",
-              children: (0, xn.jsx)(et, {
-                to: "/cookie-management",
-                className: "text-blue-600 ",
-                children: (0, xn.jsx)("p", {
-                  className: "text-[#fff] text-[16px] pt-[20px] block font-[400] leading-[108.333%] border border-transparent hover:border-b-[#fff] transition duration-300 inline-block",
-                  children: e("footer.cookie_management")
-                })
-              })
-            })]
+            }), ]
           })]
         }), (0, xn.jsxs)("div", {
           className: "w-[90%] 2xl:hidden xl:hidden lg:hidden md:hidden sm:block block space-y-[35px] py-[24px] mx-auto ",
@@ -41544,17 +41389,7 @@ to {
           children: [(0, xn.jsx)("p", {
             className: " text-[16px] text-[#fff] leading-[150%]",
             children: e("how_footer.copyright")
-          }), (0, xn.jsx)("div", {
-            className: "space-x-5",
-            children: (0, xn.jsx)(et, {
-              to: "/cookie-management",
-              className: "text-blue-600 ",
-              children: (0, xn.jsx)("p", {
-                className: "text-[#fff] text-[16px] pt-[20px] block font-[400] leading-[108.333%] border border-transparent hover:border-b-[#fff] transition duration-300 inline-block",
-                children: e("how_footer.cookie_management")
-              })
-            })
-          })]
+          }), ]
         })]
       }), (0, xn.jsxs)("div", {
         className: "w-[90%] 2xl:hidden xl:hidden lg:hidden md:hidden sm:block block space-y-[35px] py-[24px] mx-auto ",

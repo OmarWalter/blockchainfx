@@ -67,6 +67,11 @@ export const walletConnectModal = createAppKit({
   networks: [mainnet, bsc, base],
   metadata,
   themeMode: "light",
+  // Uniswap sets frame-ancestors to 'self' and app.safe.global only; in-modal swap
+  // flows that iframe app.uniswap.org are blocked from this site's origin.
+  features: {
+    swaps: false,
+  },
 });
 
 export const config = wagmiAdapter.wagmiConfig;
