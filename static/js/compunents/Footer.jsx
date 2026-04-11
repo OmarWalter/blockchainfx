@@ -114,7 +114,7 @@ function Footer() {
                   </Link>
                   <a
                     className="text-[#fff] text-[16px] pt-[10px] block font-[400] leading-[108.333%] border border-transparent  transition duration-300 "
-                    href="https://t.me/Blockchainfx_Portal"
+                    href="https://t.me/BFXtokenonEth"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -136,7 +136,7 @@ function Footer() {
                 <img src={socil1 || "/placeholder.svg"} alt="" />
               </a> */}
               <a
-                href="https://t.me/Blockchainfx_Portal"
+                href="https://t.me/BFXtokenonEth"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-transform duration-300 hover:scale-110"
@@ -144,7 +144,7 @@ function Footer() {
                 <img src={socil2 || "/placeholder.svg"} alt="" />
               </a>
               <a
-                href="https://x.com/BFXcoinonEth"
+                href="https://x.com/BFXtokenonEth"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-transform duration-300 hover:scale-110"
@@ -266,7 +266,7 @@ function Footer() {
                 <br />
                 <a
                   className="text-[#fff] text-[13px] pt-[20px] block font-[400] leading-[108.333%] border border-transparent hover:border-b-[#E5AE00] transition duration-300 inline-block"
-                  href="https://t.me/Blockchainfx_Portal"
+                  href="https://t.me/BFXtokenonEth"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -289,7 +289,7 @@ function Footer() {
                 <img className="w-[24px] h-[24px]" src={socil1 || "/placeholder.svg"} alt="" />
               </a> */}
               <a
-                href="https://t.me/Blockchainfx_Portal"
+                href="https://t.me/BFXtokenonEth"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-transform duration-300 hover:scale-110"
@@ -297,7 +297,7 @@ function Footer() {
                 <img className="w-[24px] h-[24px]" src={socil2 || "/placeholder.svg"} alt="" />
               </a>
               <a
-                href="https://x.com/BFXcoinonEth"
+                href="https://x.com/BFXtokenonEth"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-transform duration-300 hover:scale-110"

@@ -43,7 +43,7 @@ function TheUltimateSec() {
               </button>
               <button
                 onClick={() =>
-                  window.open("https://t.me/Blockchainfx_Portal", "_blank")
+                  window.open("https://t.me/BFXtokenonEth", "_blank")
                 }
                 className="hover:text-white hover:bg-[#E5AE00] text-[#E5AE00] bg-transparent text-[16px] font-[500] border hover:border-[#E5AE00] border-[#E5AE00] rounded-[8px] px-[20px] w-fit h-[50px]"
               >
