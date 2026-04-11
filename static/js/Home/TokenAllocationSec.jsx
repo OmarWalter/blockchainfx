@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 function TokenAllocationSec() {
   const { t } = useTranslation();
 
-  const address = "0x007d0267449e1f8fe8ce9d8b604abb2ce789f0ea";
+  const address = "0xComingSoon";
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(address);
@@ -80,7 +80,7 @@ function TokenAllocationSec() {
     <div className="border px-[17px] space-y-[12px] rounded-[10px] w-[100%] pt-[14px] bg-[#030F16] pb-[16px] border-[#000]">
       <h4 className="text-white/70 text-[14px] font-[400]">{t("token_allocation_section.contract_address.label")}</h4>
       <h3 className="text-white flex text-[16px] font-[500]">
-      0x007d0267449e1f8fe8ce9d8b604abb2ce789f0ea{" "}
+      0xComingSoon{" "}
         <img
           src={copy}
           className="pl-2 w-[24px] cursor-pointer"
