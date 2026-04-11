@@ -35494,7 +35494,7 @@ to {
               }), (0, xn.jsxs)("div", {
                 className: "flex space-x-6 pt-[10px] pb-[20px]",
                 children: [(0, xn.jsx)("a", {
-                  href: "https://t.me/BlockchainfxFi",
+                  href: "https://t.me/Blockchainfx_Portal",
                   target: "_blank",
                   rel: "noopener noreferrer",
                   className: "transition-transform duration-300 hover:scale-110",
@@ -35503,7 +35503,7 @@ to {
                     alt: ""
                   })
                 }), (0, xn.jsx)("a", {
-                  href: "https://x.com/BlockchainfxFi",
+                  href: "https://x.com/BFXcoinonEth",
                   target: "_blank",
                   rel: "noopener noreferrer",
                   className: "transition-transform duration-300 hover:scale-110",
@@ -35630,7 +35630,7 @@ to {
                     })
                   }), (0, xn.jsx)("br", {}), (0, xn.jsx)("a", {
                     className: "text-[#fff] text-[13px] pt-[20px] block font-[400] leading-[108.333%] border border-transparent hover:border-b-[#E5AE00] transition duration-300 inline-block",
-                    href: "https://t.me/BlockchainfxFi",
+                    href: "https://t.me/Blockchainfx_Portal",
                     target: "_blank",
                     rel: "noopener noreferrer",
                     children: e("footer.docs.support")
@@ -35648,7 +35648,7 @@ to {
               }), (0, xn.jsxs)("div", {
                 className: "flex space-x-6",
                 children: [(0, xn.jsx)("a", {
-                  href: "https://t.me/BlockchainfxFi",
+                  href: "https://t.me/Blockchainfx_Portal",
                   target: "_blank",
                   rel: "noopener noreferrer",
                   className: "transition-transform duration-300 hover:scale-110",
@@ -35658,7 +35658,7 @@ to {
                     alt: ""
                   })
                 }), (0, xn.jsx)("a", {
-                  href: "https://x.com/BlockchainfxFi",
+                  href: "https://x.com/BFXcoinonEth",
                   target: "_blank",
                   rel: "noopener noreferrer",
                   className: "transition-transform duration-300 hover:scale-110",
@@ -37697,7 +37697,7 @@ to {
               },
               children: e("the_ultimate_section.buy_bfx")
             }), (0, xn.jsx)("button", {
-              onClick: () => window.open("https://t.me/BlockchainfxFi", "_blank"),
+              onClick: () => window.open("https://t.me/Blockchainfx_Portal", "_blank"),
               className: "hover:text-[#000] text-[#E5AE00] px-[15px] hover:bg-[#E5AE00]  bg-transparent text-[12px] font-[600] border hover:border-[#E5AE00] border-[#E5AE00] rounded-[8px] w-fit h-[31px]",
               children: e("the_ultimate_section.need_support")
             })]
