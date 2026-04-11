@@ -1,0 +1,40 @@
+var _circle, _g;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+function SvgXrp(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 512 512",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _circle || (_circle = /*#__PURE__*/React.createElement("circle", {
+    cx: 256,
+    cy: 256,
+    r: 256,
+    fill: "#2e3742"
+  })), _g || (_g = /*#__PURE__*/React.createElement("g", {
+    id: "Layer_2",
+    "data-name": "Layer 2",
+    transform: "scale(0.7)"
+  }, /*#__PURE__*/React.createElement("g", {
+    id: "Layer_1-2",
+    "data-name": "Layer 1",
+    transform: "translate(110, 150)"
+  }, /*#__PURE__*/React.createElement("path", {
+    fill: "#fff",
+    d: "M437,0h74L357,152.48c-55.77,55.19-146.19,55.19-202,0L.94,0H75L192,115.83a91.11,91.11,0,0,0,127.91,0Z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#fff",
+    d: "M74.05,424H0L155,270.58c55.77-55.19,146.19-55.19,202,0L512,424H438L320,307.23a91.11,91.11,0,0,0-127.91,0Z"
+  })))));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgXrp);
+export default __webpack_public_path__ + "static/media/xrp.2ad251cf772c34933142cc66274f9b26.svg";
+export { ForwardRef as ReactComponent };

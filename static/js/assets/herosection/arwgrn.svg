@@ -1,0 +1,27 @@
+var _path;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+function SvgArwgrn(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 7,
+    height: 7,
+    viewBox: "0 0 7 7",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M0.337703 6.03125H6.41288C6.47438 6.03106 6.53468 6.01406 6.58726 5.9821C6.63984 5.95013 6.68273 5.9044 6.7113 5.84984C6.73987 5.79527 6.75305 5.73393 6.74941 5.67243C6.74577 5.61092 6.72545 5.55157 6.69065 5.50077L3.65306 1.10543C3.52717 0.923191 3.22409 0.923191 3.09786 1.10543L0.0602703 5.50077C0.0251102 5.55146 0.00449154 5.61084 0.000654406 5.67245C-0.00318273 5.73406 0.00990848 5.79555 0.0385057 5.85023C0.0671029 5.90491 0.110112 5.9507 0.162861 5.98261C0.21561 6.01452 0.276081 6.03135 0.337703 6.03125Z",
+    fill: "#1ACE2E"
+  })));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgArwgrn);
+export default __webpack_public_path__ + "static/media/arwgrn.1655291358ceb8f5b2a08b286dd589bf.svg";
+export { ForwardRef as ReactComponent };

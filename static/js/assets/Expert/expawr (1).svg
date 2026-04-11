@@ -1,0 +1,39 @@
+var _rect, _path;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+function SvgExpawr1(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 35,
+    height: 35,
+    viewBox: "0 0 35 35",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    x: -0.25,
+    y: 0.25,
+    width: 33.8373,
+    height: 33.8373,
+    rx: 6.97892,
+    transform: "matrix(-1 0 0 1 33.8359 0)",
+    fill: "#181A20",
+    stroke: "#616161",
+    strokeWidth: 0.5
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M19.3401 9.32346L13.1523 16.3516C12.7725 16.7829 12.7725 17.4822 13.1523 17.9134L19.3401 24.9416C19.7198 25.3729 20.3355 25.3729 20.7152 24.9416C21.0949 24.5103 21.0949 23.8111 20.7152 23.3798L15.2149 17.1325L20.7152 10.8853C21.0949 10.454 21.0949 9.75475 20.7152 9.32346C20.3355 8.89218 19.7198 8.89218 19.3401 9.32346Z",
+    fill: "white"
+  })));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgExpawr1);
+export default __webpack_public_path__ + "static/media/expawr (1).7d12ad0379491d7c41fe88bac727588d.svg";
+export { ForwardRef as ReactComponent };

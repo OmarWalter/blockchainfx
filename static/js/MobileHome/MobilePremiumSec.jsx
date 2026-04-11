@@ -1,0 +1,275 @@
+import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import Iicon from "../assets/Gateway/i.svg";
+import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import starticn from "../assets/PremiumSec/start.svg";
+import arw from "../assets/PremiumSec/arw.svg";
+import qArw from "../assets/PremiumSec/qArw.webp";
+import faq1 from "../assets/PremiumSec/faq (1).svg";
+import faq2 from "../assets/PremiumSec/faq (2).svg";
+import line from "../assets/PremiumSec/line.png";
+import cardimg1 from "../assets/PremiumSec/card1.webp";
+import cardimg2 from "../assets/PremiumSec/card2.webp";
+import cardimg3 from "../assets/PremiumSec/card3.webp";
+import cardimg4 from "../assets/PremiumSec/card4.webp";
+import cardimg5 from "../assets/PremiumSec/card5.webp";
+import cardimg6 from "../assets/PremiumSec/card6.webp";
+import cardimg7 from "../assets/PremiumSec/card7.webp";
+import tick from "../assets/PremiumSec/true.png";
+import cross from "../assets/PremiumSec/false.png";
+
+const cardImages = [cardimg1, cardimg2, cardimg3, cardimg4, cardimg5, cardimg6, cardimg7];
+const cardReviews = [
+  [true, true, true, false, false],
+  [true, true, true, true, false],
+  [true, true, true, true, false],
+  [true, true, true, false, false],
+  [true, true, true, true, false],
+  [true, true, true, true, false],
+  [true, true, true, true, false],
+];
+const cardIcons = [tick, tick, tick, cross, cross]; 
+
+function MobilePremiumSec() {
+  const { t } = useTranslation();
+  const cardImages = [cardimg1, cardimg2, cardimg3, cardimg4, cardimg5, cardimg6, cardimg7];
+  const cardReviews = [
+    [true, true, true, false, false],
+    [true, true, true, true, false],
+    [true, true, true, true, false],
+    [true, true, true, true, true],
+    [true, true, true, true, true],
+    [true, true, true, true, true],
+    [true, true, true, true, true],
+  ];
+  const cardsmobRaw = t("premium_section.cards", { returnObjects: true });
+  const cardsmob = cardsmobRaw.map((card, idx) => {
+    const points = card.points.map((text, pIdx) => ({
+      text,
+      icon: cardReviews[idx][pIdx] ? tick : cross,
+      tooltip: card.cardPointsTooltips ? card.cardPointsTooltips[pIdx] : undefined,
+    }));
+    return {
+      ...card,
+      img: cardImages[idx],
+      reviews: cardReviews[idx],
+      points,
+    };
+  });
+
+  // Prepare FAQ data from translations for future use
+  const faq = t("premium_section.faq.questions", { returnObjects: true });
+  const faqTooltipText = t("premium_section.faq.tooltip_text", { returnObjects: true });
+
+  const [openBundles, setOpenBundles] = useState(0);
+  const [showTooltip, setShowTooltip] = useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const [mainSwiper, setMainSwiper] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+    const location = useLocation();
+    const isHome = location.pathname === "/";
+
+  const tierAmounts = [
+    "$1,000",
+    "$2,500",
+    "$5,000",
+    "$10,000",
+    "$25,000",
+    "$50,000",
+    "$100,000",
+  ];
+
+  const toggleBundles = (id) => {
+    setOpenBundles(id === openBundles ? null : id);
+  };
+  const cards = t("MobilePremiumSec.cards", { returnObjects: true });
+
+  const handleScroll = () => {
+    setTimeout(() => {
+      const element = document.getElementById("Wallet");
+      if (element) {
+        const elementPosition =
+          element.getBoundingClientRect().top + window.pageYOffset;
+        const offset = 80;
+        window.scrollTo({
+          top: elementPosition - offset,
+          behavior: "smooth",
+        });
+      }
+    }, 200);
+  };
+  return (
+    <div className="pt-[10px] pb-[34px] px-6 bg-[#020B10]" id="premium">
+      <div className="relative flex flex-col gap-12 p-[20px] rounded-[16px] bg-[#010E11] border-[1px] border-[#3D3D3D]">
+        <div className="space-y-[12px]">
+          <h3 className=" text-[#FFF] text-center text-[30px] font-[600] leading-[120%] tracking-[-1.5px]">
+            <span dangerouslySetInnerHTML={{ __html: t("premium_section.title") }} />
+          </h3>
+          <p className=" mx-auto font-inter text-[16px] text-[#fff] font-medium leading-[25px] text-center ">
+            <span className="mobilepara" dangerouslySetInnerHTML={{ __html: t("premium_section.description") }} />
+          </p>
+        </div>
+        <div className="w-[90%] mx-auto">
+          <div className="flex justify-between pb-2 items-centers">
+            <h4 className="text-[14px] font-[700] text-[#fff]">
+              {t("premium_section.how_much_spend")}
+            </h4>
+            <h4 className="text-[14px] font-[700] text-[#fff]">
+              {tierAmounts[activeIndex]}
+            </h4>
+          </div>
+          <input
+            type="range"
+            min={0}
+            max={cardsmob.length - 1}
+            value={activeIndex}
+            onChange={(e) => {
+              const newIndex = Number(e.target.value);
+              setActiveIndex(newIndex);
+              if (mainSwiper) {
+                mainSwiper.slideTo(newIndex);
+              }
+            }}
+            className="w-[100%] accent-[#E5AE00] cursor-pointer"
+          />
+        </div>
+
+        <div className="w-[100%] mx-auto ">
+          <div className="relative preswiper">
+            <Swiper
+              speed={800}
+              slidesPerView={1}
+              spaceBetween={20}
+              onSwiper={setMainSwiper}
+              onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+              navigation={{
+                nextEl: ".swiper-button-next-1",
+                prevEl: ".swiper-button-prev-1",
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Navigation, Pagination]}
+              loop={false}
+              className="mySwiper !min-h-[640px]"
+            >
+              {cardsmob.map((card, index) => (
+                <SwiperSlide key={card.title}>
+                  <div
+                    style={{
+                      background: "#030F16",
+                      borderColor: "rgba(230, 175, 3, 0.12)",
+                    }}
+                    className={`p-[15px] rounded-[8px] flex w-[100%] mx-auto flex-col justify-between ${
+                      activeIndex === index
+                        ? "border-black"
+                        : "rgba(230, 175, 3, 0.12)"
+                    } border !min-h-[590px] max-h-[590px] h-[100%]`}
+                  >
+                    <div>
+                      <img
+                        src={card.img}
+                        loading="lazy"
+                        className="rounded-[8px] w-[100%] max-h-[190px]"
+                        alt={card.title}
+                      />
+
+                      <div className="flex space-x-3 items-start py-[14px]">
+                        <div>
+                          <h3 className="text-[#ffff] flex flex-col justify-end font-[600] ">
+                            <span  className={`leading-[100%] ${isHome ? "text-[30px]" : "text-[24px]"}`}>
+                              {card.title}
+                            </span>
+                            <span className="text-[#fff] text-start pt-[10px] text-[18.286px] font-[600]">
+                              {card.price}
+                            </span>
+                          </h3>
+                        </div>
+                        <h3
+                          className="text-[#fff] text-center border rounded-[16px] px-[26px] py-[6px] text-[16.27px] font-[600]"
+                          style={{
+                            border: "1px solid rgba(255, 255, 255, 0.10)",
+                          }}
+                        >
+                          NFT
+                        </h3>
+                      </div>
+
+                      <ul className="text-left">
+                        {card.points.map((point, pIndex) => (
+                          <div
+                            className="flex mb-1 px-[8px] h-[40.719px] rounded-[8px] justify-between items-center"
+                            style={{
+                              background: "rgba(124, 124, 124, 0.07)",
+                            }}
+                            key={pIndex}
+                          >
+                            <li
+                              className=" flex items-center text-[#fff] text-[14px] font-[400] leading-[127.778%] tracking-[-0.32px]"
+                            >
+                              <img
+                                src={point.icon}
+                                alt=""
+                                className="w-5 h-5 mr-3"
+                              />
+                              {point.text}
+                            </li>
+                            <div className="relative inline-block group">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="14"
+                                height="14"
+                                viewBox="0 0 22 22"
+                                fill="none"
+                                className="cursor-pointer"
+                              >
+                                <path
+                                  d="M10.5 0C16.023 0 20.5 4.477 20.5 10C20.5 15.523 16.023 20 10.5 20C4.977 20 0.5 15.523 0.5 10C0.5 4.477 4.977 0 10.5 0ZM10.5 1.395C8.21781 1.395 6.0291 2.3016 4.41535 3.91535C2.8016 5.5291 1.895 7.71781 1.895 10C1.895 12.2822 2.8016 14.4709 4.41535 16.0847C6.0291 17.6984 8.21781 18.605 10.5 18.605C12.7822 18.605 14.9709 17.6984 16.5847 16.0847C18.1984 14.4709 19.105 12.2822 19.105 10C19.105 7.71781 18.1984 5.5291 16.5847 3.91535C14.9709 2.3016 12.7822 1.395 10.5 1.395ZM10.355 7.21C10.74 7.21 11.052 7.523 11.052 7.908V15.466C11.0452 15.6464 10.9687 15.8172 10.8386 15.9424C10.7086 16.0676 10.535 16.1376 10.3545 16.1376C10.174 16.1376 10.0004 16.0676 9.87037 15.9424C9.74031 15.8172 9.66383 15.6464 9.657 15.466V7.907C9.657 7.522 9.969 7.21 10.355 7.21ZM10.383 4.419C10.6297 4.419 10.8662 4.51698 11.0406 4.69139C11.215 4.8658 11.313 5.10235 11.313 5.349C11.313 5.59565 11.215 5.8322 11.0406 6.00661C10.8662 6.18102 10.6297 6.279 10.383 6.279C10.1363 6.279 9.8998 6.18102 9.72539 6.00661C9.55098 5.8322 9.453 5.59565 9.453 5.349C9.453 5.10235 9.55098 4.8658 9.72539 4.69139C9.8998 4.51698 10.1363 4.419 10.383 4.419Z"
+                                  fill="white"
+                                />
+                              </svg>
+                              {point.tooltip && (
+                                <div className="absolute left-[-80px] min-w-[200px] -translate-x-1/2 bottom-full mb-2 hidden group-hover:block bg-[#020B10] border border-gray-700 text-white text-xs rounded px-2 py-1 z-[9999] ">
+                                  {point.tooltip}
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="flex justify-start pt-[15px]">
+                      <button
+                        onClick={handleScroll}
+                        onMouseEnter={() => setHoveredIndex(index)}
+                        onMouseLeave={() => setHoveredIndex(null)}
+                        style={{
+                          background:
+                            hoveredIndex === index
+                              ? "transparent"
+                              : "linear-gradient(90deg, #E5AE00 0%, #FFD551 100%)",
+                        }}
+                        className="text-black px-[12px] hover:text-[#E5AE00] hover:!bg-transparent text-[14.629px] font-[800] border border-[#E5AE00] hover:border-[#E5AE00] rounded-[8px] w-[100%] h-[49px]"
+                      >
+                        {card.buttonLabel}
+                      </button>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default MobilePremiumSec;

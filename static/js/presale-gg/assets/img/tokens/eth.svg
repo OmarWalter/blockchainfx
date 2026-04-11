@@ -1,0 +1,58 @@
+var _g, _defs;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+function SvgEth(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 43,
+    height: 42,
+    viewBox: "0 0 43 42",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_27_6003)"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M21.5 42C33.098 42 42.5 32.598 42.5 21C42.5 9.40202 33.098 0 21.5 0C9.90202 0 0.5 9.40202 0.5 21C0.5 32.598 9.90202 42 21.5 42Z",
+    fill: "#627EEA"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M22.1543 5.25V16.8919L31.9941 21.2887L22.1543 5.25Z",
+    fill: "white",
+    fillOpacity: 0.602
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M22.1544 5.25L12.3132 21.2887L22.1544 16.8919V5.25Z",
+    fill: "white"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M22.1543 28.8331V36.7435L32.0007 23.1211L22.1543 28.8331Z",
+    fill: "white",
+    fillOpacity: 0.602
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M22.1544 36.7435V28.8318L12.3132 23.1211L22.1544 36.7435Z",
+    fill: "white"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M22.1543 27.0021L31.9941 21.2888L22.1543 16.8945V27.0021Z",
+    fill: "white",
+    fillOpacity: 0.2
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M12.3132 21.2888L22.1544 27.0021V16.8945L12.3132 21.2888Z",
+    fill: "white",
+    fillOpacity: 0.602
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_27_6003"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 42,
+    height: 42,
+    fill: "white",
+    transform: "translate(0.5)"
+  })))));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgEth);
+export default __webpack_public_path__ + "static/media/eth.684bf02c2532ac5bbb5ea6fcecb3cb63.svg";
+export { ForwardRef as ReactComponent };

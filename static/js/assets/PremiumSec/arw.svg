@@ -1,0 +1,47 @@
+var _rect, _rect2, _path;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+function SvgArw(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 43,
+    height: 44,
+    viewBox: "0 0 43 44",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    y: 0.808594,
+    width: 43,
+    height: 43,
+    rx: 21.5,
+    fill: "white",
+    fillOpacity: 0.1
+  })), _rect2 || (_rect2 = /*#__PURE__*/React.createElement("rect", {
+    x: 0.252941,
+    y: 1.06153,
+    width: 42.4941,
+    height: 42.4941,
+    rx: 21.2471,
+    stroke: "white",
+    strokeOpacity: 0.1,
+    strokeWidth: 0.505882
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M18.9766 27.4841L23.2369 23.2238C23.7401 22.7206 23.7401 21.8973 23.2369 21.3942L18.9766 17.1338",
+    stroke: "white",
+    strokeWidth: 0.980147,
+    strokeMiterlimit: 10,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgArw);
+export default __webpack_public_path__ + "static/media/arw.1a0857999f485e3438b55d4ee2b9eec1.svg";
+export { ForwardRef as ReactComponent };

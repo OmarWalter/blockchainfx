@@ -1,0 +1,51 @@
+var _g, _defs;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+function SvgBusd(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 32,
+    height: 32,
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_27_6256)"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z",
+    fill: "#F0B90B"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M16.3484 5.3335L19.0775 8.12828L12.2056 15.0002L9.47656 12.2711L16.3484 5.3335Z",
+    fill: "white",
+    stroke: "#F0B90B"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M20.4913 9.47607L23.2203 12.2709L12.2056 23.2856L9.47656 20.5566L20.4913 9.47607Z",
+    fill: "white",
+    stroke: "#F0B90B"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M8.06203 13.6191L10.7911 16.4139L8.06203 19.143L5.33301 16.4139L8.06203 13.6191Z",
+    fill: "white",
+    stroke: "#F0B90B"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M24.6339 13.6191L27.3629 16.4139L16.3482 27.4287L13.6191 24.6996L24.6339 13.6191Z",
+    fill: "white",
+    stroke: "#F0B90B"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_27_6256"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 32,
+    height: 32,
+    fill: "white"
+  })))));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgBusd);
+export default __webpack_public_path__ + "static/media/busd.dd84f0db590f50b5c9a71bc2b48010fe.svg";
+export { ForwardRef as ReactComponent };

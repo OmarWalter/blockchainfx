@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkblockchain_fx=self.webpackChunkblockchain_fx||[]).push([[531],{44531:(n,t,c)=>{c.r(t),c.d(t,{getPublicClient:()=>e,publicClients:()=>s,rpcMap:()=>r});var i=c(69490),l=c(35319),a=c(18811),o=c(89943);const r={1:"https://rpc.ankr.com/eth",56:"https://bsc-dataseed1.binance.org/"},s={1:(0,i.l)({chain:a.r,transport:(0,l.L)(null===r||void 0===r?void 0:r[1])}),56:(0,i.l)({chain:o.N,transport:(0,l.L)(null===r||void 0===r?void 0:r[56])})},e=n=>s[(null!==n&&void 0!==n?n:1).toString()]}}]);
+//# sourceMappingURL=531.9cd217ea.chunk.js.map

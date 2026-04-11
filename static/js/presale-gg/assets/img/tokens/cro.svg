@@ -1,0 +1,83 @@
+var _style, _path, _path2, _path3;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+function SvgCro(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    id: "Layer_1",
+    xmlns: "http://www.w3.org/2000/svg",
+    xmlnsXlink: "http://www.w3.org/1999/xlink",
+    x: "0px",
+    y: "0px",
+    viewBox: "0 0 120.1 138.8",
+    style: {
+      enableBackground: "new 0 0 120.1 138.8"
+    },
+    xmlSpace: "preserve",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _style || (_style = /*#__PURE__*/React.createElement("style", {
+    type: "text/css"
+  }, "\r\n\t.st0{fill:#002D74;}\r\n\t.st1{fill:url(#SVGID_1_);}\r\n\t.st2{fill:url(#SVGID_00000061444671184501762360000006264132297249298069_);}\r\n")), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    className: "st0",
+    d: "M60.1,0L0,34.7v69.4l60.1,34.7l60-34.7V34.7L60.1,0z M102.3,93.8l-42.3,24.4L17.8,93.8V45l42.3-24.4L102.3,45  V93.8z"
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "SVGID_1_",
+    gradientUnits: "userSpaceOnUse",
+    x1: 90.1166,
+    y1: 1.0868,
+    x2: 90.1166,
+    y2: 70.4884,
+    gradientTransform: "matrix(1 0 0 -1 0 139.8898)"
+  }, /*#__PURE__*/React.createElement("stop", {
+    offset: 0,
+    style: {
+      stopColor: "#002D74"
+    }
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    style: {
+      stopColor: "#002D74",
+      stopOpacity: 0
+    }
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    className: "st1",
+    d: "M60.1,138.8l60-34.7V34.7L60.1,0v20.6L102.3,45v48.9l-42.3,24.4V138.8z"
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "SVGID_00000034064843000503835000000005854543727190432132_",
+    gradientUnits: "userSpaceOnUse",
+    x1: 30.0233,
+    y1: 139.8898,
+    x2: 30.0233,
+    y2: 70.4884,
+    gradientTransform: "matrix(1 0 0 -1 0 139.8898)"
+  }, /*#__PURE__*/React.createElement("stop", {
+    offset: 0,
+    style: {
+      stopColor: "#002D74"
+    }
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    style: {
+      stopColor: "#002D74",
+      stopOpacity: 0
+    }
+  })), /*#__PURE__*/React.createElement("path", {
+    style: {
+      fill: "url(#SVGID_00000034064843000503835000000005854543727190432132_)"
+    },
+    d: "M60,0L0,34.7v69.4l60,34.7v-20.6L17.8,93.8  V44.9L60,20.6V0z"
+  }), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    className: "st0",
+    d: "M88.1,85.6l-28,16.2L32,85.6V53.2L60.1,37l28,16.2L76.4,60l-16.4-9.5L43.7,60v18.9l16.4,9.5l16.4-9.5L88.1,85.6  z"
+  })));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgCro);
+export default __webpack_public_path__ + "static/media/cro.befe5ca670250b429c0bb1bc4224e40e.svg";
+export { ForwardRef as ReactComponent };

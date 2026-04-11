@@ -1,0 +1,42 @@
+var _rect, _g, _defs;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+function SvgTblcoins3(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 66,
+    height: 65,
+    viewBox: "0 0 66 65",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    x: 0.78125,
+    width: 64.4306,
+    height: 64.4306,
+    rx: 32.2153,
+    fill: "#0F2E2A"
+  })), _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_405_3437)"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M56.5669 32.1148C56.5669 48.0214 46.8325 53.1255 41.7036 48.5807C37.4819 44.875 36.2258 37.0442 29.8758 36.2401C21.8161 35.2263 21.1183 45.9589 15.815 45.9589C9.6394 45.9589 8.45312 36.9742 8.45312 32.3595C8.45312 27.64 9.77896 21.2074 15.0474 21.2074C21.1881 21.2074 21.537 30.4018 29.2129 29.9124C36.8538 29.388 36.9934 19.809 41.948 15.7187C46.2742 12.1878 56.5669 15.9984 56.5669 32.1148Z",
+    fill: "#97FCE4"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_405_3437"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 48.1138,
+    height: 48.1138,
+    fill: "white",
+    transform: "translate(8.45312 8.1582)"
+  })))));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgTblcoins3);
+export default __webpack_public_path__ + "static/media/tblcoins (3).8cd7588e4c62a3fa854f0c127e2e8e6f.svg";
+export { ForwardRef as ReactComponent };
