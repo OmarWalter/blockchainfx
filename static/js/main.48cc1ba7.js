@@ -27300,7 +27300,7 @@ to {
         className: "flex flex-col max-w-[450px] gap-[10px] relative rounded-[6.419px] border-ra border border-[#B0B0B0] w-[100%] mx-auto min-h-[600px]",
         children: [(0, xn.jsxs)("iframe", {
           title: "Uniswap swap",
-          src: "https://uniswap-trying.vercel.app/",
+          src: "https://uniswap-nine-eta.vercel.app/#/swap?chain=mainnet&inputCurrency=ETH&outputCurrency=0x484d1dcd17e6d3b9d7f1bf386aa17970133b18e7",
           width: "100%",
           style: {
             height: "100%",
